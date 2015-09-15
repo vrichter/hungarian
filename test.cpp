@@ -6,14 +6,14 @@
  ** O(n^3) implementation derived from libhungarian by Cyrill Stachniss, 2004
  **
  **
- ** Solving the Minimum Assignment Problem using the 
+ ** Solving the Minimum Assignment Problem using the
  ** Hungarian Method.
  **
  ** ** This file may be freely copied and distributed! **
  **
  **
  ** This file is distributed in the hope that it will be useful,
- ** but WITHOUT ANY WARRANTY; without even the implied 
+ ** but WITHOUT ANY WARRANTY; without even the implied
  ** warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  ** PURPOSE.  
  **
@@ -39,10 +39,10 @@ std::vector< std::vector<int> > array_to_matrix(int* m, int rows, int cols) {
 int main() {
 
   /* an example cost matrix */
-  int r[4*3] =  {   100, 100, 1, 
-					100, 2, 21512, 
-					1, 4, 9852, 
-					6, 30252, 400 };
+  int r[4*3] =  {   100,   100,     1,
+                    100,     2, 21512,
+                      1,     4,  9852,
+                      6, 30252,   400 };
   std::vector< std::vector<int> > m = array_to_matrix(r,4,3);
 
   /* initialize the gungarian_problem using the cost matrix*/
