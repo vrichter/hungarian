@@ -31,6 +31,7 @@ Hungarian::Hungarian()
 	//much ado about nothing
 	m_rows = 1;
 	m_cols = 1;
+  m_cost = 0;
 
 	m_costmatrix.resize(m_rows, vector<int>(m_cols,0));
 	m_assignment.resize(m_rows, vector<int>(m_cols,0));
@@ -56,6 +57,7 @@ Hungarian::Hungarian(const vector<vector<int> >& input_matrix, int rows, int col
   
   m_rows = rows;
   m_cols = cols;
+  m_cost = 0;
 
   m_costmatrix.resize(rows, vector<int>(cols,0));
   m_assignment.resize(rows, vector<int>(cols,0));
